@@ -30,7 +30,7 @@ This project aims to build a framework for recursive and truly reasoning models.
 
 3. Install the required packages:
    ```sh
-   pip install openai jupyter
+   pip install openai jupyter python-dotenv
    ```
 
 ## Usage
@@ -41,16 +41,22 @@ This project aims to build a framework for recursive and truly reasoning models.
    jupyter notebook mk1.ipynb
    ```
 
-2. Add your OpenAI API key in the `client` initialization section:
+2. Create your .env file and add your API key in it.
+
+   ```sh
+   OPEN_ROUTER_API=your-api-key-here
+   ```
+
+3. Add your OpenAI API key in the `client` initialization section:
 
    ```python
    client = OpenAI(
      base_url="https://openrouter.ai/api/v1",
-     api_key="your-api-key-here",
+     api_key=os.getenv("OPEN_ROUTER_API"),
    )
    ```
 
-3. Run the cells in the notebook to interact with the OpenAI API.
+4. Run the cells in the notebook to interact with the OpenAI API.
 
 ## Project Structure
 
