@@ -14,8 +14,8 @@ This project aims to build a framework for recursive and truly reasoning models.
 1. Clone the repository:
 
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/AdityaSai2004/TrueReason.git
+   cd TrueReason
    ```
 
 2. Create a virtual environment and activate it:
@@ -51,7 +51,7 @@ This project aims to build a framework for recursive and truly reasoning models.
 
 ## Project Structure
 
-- [mk1.ipynb](http://_vscodecontentref_/0): The main Jupyter Notebook containing the code to interact with the OpenAI API and execute generated code.
+- [mk1.ipynb]: The main Jupyter Notebook containing the code to interact with the OpenAI API and execute generated code.
 
 ## Workflow
 
