@@ -1,5 +1,7 @@
 # TrueReason
-Note : This project is a work in progress and will be updated continously. PRs are welcome.
+
+Note : This project is a work in progress and will be updated continously. PRs are welcome.Special thanks to Chatgpt.
+
 ## Recursive Reasoning Framework
 
 This project aims to build a framework for recursive and truly reasoning models. Instead of generating text responses to logical or mathematical questions, the model generates executable code. The code is then executed, and the results are sent back to the model for further explanation based on the generated answer.
@@ -65,19 +67,15 @@ This project aims to build a framework for recursive and truly reasoning models.
 ## Example
 
 Prompt:
-What is the speed of a car if it starts from 0km/hr and accelerates at 5kms/hr after 2hrs.What is the capital of France?
+How many Rs in the word Strawberry?
 
 Generated Code:
-initial_speed = 0
-acceleration = 5
-time = 2
-final_speed = initial_speed + (acceleration \* time)
-print(f'{final_speed=}')
-print('The capital of France is Paris.')
+word = "Strawberry"
+count = word.lower().count('r')
+print(count)
 
 Execution Result:
-final_speed=10
-The capital of France is Paris.
+3
 
 Final Answer:
-The car's final speed is 10 km/hr. The capital of France is Paris.
+The word "Strawberry" contains 3 "R"s (or "r"s). This is because the code correctly converts the word to lowercase ("strawberry") and then counts the occurrences of 'r', finding three instances.
