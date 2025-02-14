@@ -1,4 +1,5 @@
-# Recursive Reasoning Framework
+# TrueReason
+## Recursive Reasoning Framework
 
 This project aims to build a framework for recursive and truly reasoning models. Instead of generating text responses to logical or mathematical questions, the model generates executable code. The code is then executed, and the results are sent back to the model for further explanation based on the generated answer.
 
